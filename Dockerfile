@@ -1,5 +1,6 @@
 FROM cloudpack/centos
 
+RUN yum -y update
 RUN yum -y install initscripts openssh-server bash-completion
 RUN yum -y clean all
 
